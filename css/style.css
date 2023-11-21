@@ -1,0 +1,70 @@
+/* Starter */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utils */
+
+body{
+    padding-top: 120px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.border {
+    border: 2px dashed black;
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+/* Header */
+header {
+    color: white;
+    background-color: #FF6900;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar {
+    height: 80px;
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar > * {
+    flex-basis: 20%;
+    padding: 10px 0;
+}
+
+.navbar-menu ul {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar img {
+    height: 30px;
+    display: block;
+    margin: auto;
+}
+    
+.navbar-actions ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}

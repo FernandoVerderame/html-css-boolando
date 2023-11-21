@@ -23,7 +23,7 @@ body{
 }
 
 .border {
-    border: 2px dashed black;
+    border: 2px dashed red;
 }
 
 li {
@@ -74,10 +74,11 @@ header {
 }
 
 /* Main */
-
+main {
+    padding-bottom: 40px;
+}
 
 /* Card */
-
 .card {
     background-color: white;
     height: 600px;
@@ -94,8 +95,8 @@ header {
 }
 
 .card-info {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 100%;
 }
 
 .price .new {
@@ -167,8 +168,55 @@ header {
     width: 100%;
     opacity: 0;
     transition: .5s ease;
-  }
+}
   
-  .card:hover .overlay {
+.card:hover .overlay {
     opacity: 1;
-  }
+}
+
+/* Footer */
+footer {
+    color: white;
+    background-color: black;
+    min-height: 100px;
+}
+
+.aside-bar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.aside-bar > * {
+    flex-basis: 40%;
+    padding: 10px 0;
+}
+
+.info-footer ul {
+    display: flex;
+    gap: 13px;
+}
+
+h4 {
+    margin-top: 12px;
+    font-size: 20px;
+    padding: 7px 0; 
+}
+
+.find-us {
+    margin-top: 25px;
+    text-align: end;
+    padding-bottom: 8px;
+    margin-right: 20px;
+}
+
+.social {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+}
+

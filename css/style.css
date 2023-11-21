@@ -5,14 +5,16 @@
     box-sizing: border-box;
 }
 
-/* Utils */
+/* Generics */ 
 
 body{
     padding-top: 120px;
 }
 
+/* Utils */
+
 .container {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -37,6 +39,7 @@ header {
     top: 0;
     left: 0;
     right: 0;
+    box-shadow: 0px 5px 5px #dedede;
 }
 
 .navbar {
@@ -67,4 +70,46 @@ header {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+}
+
+/* Main */
+
+
+/* Card */
+
+.card {
+    background-color: white;
+    height: 600px;
+    width: 300px;
+    color: black;
+    display: inline-block;
+}
+
+.card-img {
+    height: 100%;
+    width: auto;
+}
+
+.card-info {
+    height: 100%;
+    width: auto;
+}
+
+.price .discount {
+    color: red;
+}
+
+.price .old {
+    text-decoration: line-through;
+}
+
+.row.padding {
+    display: flex;
+    margin: 0 -1rem;
+    flex-wrap: wrap;
+}
+
+.padding .col {
+    padding: 1rem;
+    flex-basis: calc(100% / 3);
 }

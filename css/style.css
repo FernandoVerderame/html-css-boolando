@@ -9,6 +9,7 @@
 
 body{
     padding-top: 120px;
+    font-family: sans-serif;
 }
 
 /* Utils */
@@ -80,16 +81,20 @@ main {
 
 /* Card */
 .card {
-    background-color: white;
-    height: 600px;
     width: 300px;
-    color: black;
-    display: inline-block;
+    height: 600px;
     position: relative;
+    display: inline-block;
 }
 
-.card-img {
-    height: 100%;
+.main-pic {
+    height: 600px;
+    width: auto;
+    display: block;
+}
+
+.secondary-pic {
+    height: 600px;
     width: auto;
     display: block;
 }
@@ -97,6 +102,23 @@ main {
 .card-info {
     height: auto;
     width: 100%;
+}
+
+.signature {
+    margin-top: 5px;
+}
+
+.dress {
+    padding: 3px 0;
+}
+
+.card .secondary-pic,
+.card:hover .main-pic {
+    display: none;
+}
+
+.card:hover .secondary-pic {
+    display: block;
 }
 
 .price .new {
@@ -158,21 +180,7 @@ main {
     cursor: pointer;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-}
-  
-.card:hover .overlay {
-    opacity: 1;
-}
+
 
 /* Footer */
 footer {
